@@ -71,7 +71,7 @@ public class datakelulusanmahasiswa {
             }
         }
 
-            String huruf2 = "";
+    String huruf2 = "";
     if (akhir2 >= 80) {
         huruf2 = "A"; 
     }else{
@@ -116,7 +116,7 @@ public class datakelulusanmahasiswa {
     
     System.out.println();
     double rataRata = (akhir1 + akhir2) / 2;
-    System.out.println("RATA RATA NILAI AKHIR   :" + rataRata);
+    System.out.println("RATA RATA NILAI AKHIR   :" + String.format("%.2f", rataRata));
     
     if(rataRata >= 70) {
         System.out.println("STATUS SEMESTER         :LULUS");
