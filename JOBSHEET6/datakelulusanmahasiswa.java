@@ -30,72 +30,47 @@ public class datakelulusanmahasiswa {
     double akhir1 = nilaiUTS1 * 0.3 + nilaiUAS1 * 0.4 + nilaiTUGAS1 * 0.3;
     double akhir2 = nilaiUTS2 * 0.3 + nilaiUAS2 * 0.4 + nilaiTUGAS2 * 0.3;
     
-    String status1 = "";
+    String huruf1, huruf2, status1, status2;
+    if (akhir1 > 80 && akhir1 <= 100) {
+        huruf1 = "A";
+        }else if (akhir1 > 73 && akhir1 <= 80) {
+         huruf1 = "B+";
+        }else if (akhir1 > 65 && akhir1 <= 73) {
+         huruf1 = "B";
+        }else if (akhir1 > 60 && akhir1 <= 65) {
+         huruf1 = "C+";
+        }else if (akhir1 > 50 && akhir1 <= 60) {
+         huruf1 = "C";
+        }else if (akhir1 > 39 && akhir1 <= 50) {
+         huruf1 = "D";
+        }else {
+         huruf1 = "E";
+    }
+
+    if (akhir2 > 80 && akhir2 <= 100) {
+        huruf2 = "A";
+        }else if (akhir2 > 73 && akhir2 <= 80) {
+         huruf2 = "B+";
+        }else if (akhir2 > 65 && akhir2 <= 73) {
+         huruf2 = "B";
+        }else if (akhir2 > 60 && akhir2 <= 65) {
+         huruf2 = "C+";
+        }else if (akhir2 > 50 && akhir2 <= 60) {
+         huruf2 = "C";
+        }else if (akhir2 > 39 && akhir2 <= 50) {
+         huruf2 = "D";
+        }else {
+         huruf2 = "E";
+    }
+
     if(akhir1 >= 60) {
         status1 = "LULUS";
         }else{
             status1 = "TIDAK LULUS";
-        }
-    
-    String status2 = "";
-    if(akhir2 >=60) {
-        status2 = "LULUS";
-        }else{
-            status2 = "TIDAK LULUS";
-        } 
-
-    String huruf1 = "";
-    if (akhir1 >= 80) {
-        huruf1 = "A"; 
-    }else{
-        if (akhir1 >= 73) {
-            huruf1 = "B+";
-        } else { 
-            if  (akhir1 >= 65) {
-                huruf1 = "B";
-            } else {
-                if (akhir1 >= 60) {
-                    huruf1 = "C+";
-                } else { 
-                    if (akhir1 >= 50) {
-                        huruf1 = "C";
-                    } else { 
-                        if (akhir1 >= 39) {
-                            huruf1 = "D";
-                        }else{
-                            huruf1 = "E";
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-    String huruf2 = "";
-    if (akhir2 >= 80) {
-        huruf2 = "A"; 
-    }else{
-        if (akhir2 >= 73) {
-            huruf2 = "B+";
-        } else { 
-            if  (akhir2 >= 65) {
-                huruf2 = "B";
-            } else {
-                if (akhir2 >= 60) {
-                    huruf2 = "C+";
-                } else { 
-                    if (akhir2 >= 50) {
-                        huruf2 = "C";
-                    } else { 
-                        if (akhir2 >= 39) {
-                            huruf2 = "D";
-                        }else{
-                            huruf2 = "E";
-                            }
-                        }
-                    }
-                }
-            }
+        }if (akhir2 >= 60) {
+            status2 = "LULUS";
+            }else {
+                status2 = "TIDAK LULUS";
         }
 
 
